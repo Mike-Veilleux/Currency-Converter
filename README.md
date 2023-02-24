@@ -16,7 +16,7 @@ A currency conversion app created with React, Material UI, Typescript, Zustand a
 
 A big shout out to **fawazahmed0** for his [currency-api](https://github.com/fawazahmed0/currency-api#readme)! Amazing work, Thanks mate!
 
-This exercise is focusing on aspects:
+This exercise is focusing on the following aspects:
 
 - API calls for data fetching.
 - State management with Zustand
