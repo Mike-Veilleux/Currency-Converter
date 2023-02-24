@@ -45,9 +45,11 @@ const Favorites = () => {
 
   useEffect(() => {
     const favs = JSON.parse(localStorage.getItem("FavCurrencies")!);
-    favs.forEach((f: string) => {
-      storeActions.setAddToFavorites(f);
-    });
+    if (favs != null) {
+      favs.forEach((f: string) => {
+        storeActions.setAddToFavorites(f);
+      });
+    }
   }, []);
 
   const renderFavs = favoritesStore?.map((item, index) => {
@@ -61,19 +63,23 @@ const Favorites = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "strecth",
-          background: "#323232",
-          boxShadow: "3px 5px 5px #455a7a",
+          //background: "#323232",
+          boxShadow: "3px 5px 5px #042f52",
+          border: "1px solid #90caf9",
         }}
       >
         <Stack display={"flex"} direction={"row"} alignItems={"stretch"}>
+          <Box width={40} />
           <Typography
             variant="h6"
+            //color={"primary"}
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}
             flexGrow={1}
           >{`${match!.fullName}`}</Typography>
           <IconButton
+            sx={{ color: "#b02e2e" }}
             onClick={() => storeActions.setRemoveFromFavorites(index)}
           >
             <HighlightOffIcon />
@@ -82,6 +88,7 @@ const Favorites = () => {
         <Divider />
         <Typography
           variant="h4"
+          //color={"primary"}
           display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}

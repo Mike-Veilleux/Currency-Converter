@@ -31,7 +31,7 @@ const useStore = create<dataStore>((set, get) => ({
   selectedCurrency: ["btc", "Bitcoin"],
   currencyCode: "btc",
   amountToConvert: 1,
-  favoriteRates: ["usd"],
+  favoriteRates: [],
   // favoriteRates: ["usd", "cad", "hkd", "eur", "gbp"],
   actions: {
     fetchDefinitions: async () => {
