@@ -14,7 +14,7 @@ Live demo [here](https://mike-veilleux.github.io/Currency-Converter/)
 
 A currency conversion app created with React, Material UI, Typescript, Zustand and Vite toolchain.
 
-A big shout out to for this amazing API
+A big shout out to **fawazahmed0** for his [currency-api](https://github.com/fawazahmed0/currency-api#readme)! Amazing work, Thanks mate!
 
 This exercise is focusing on aspects:
 
